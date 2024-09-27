@@ -1,0 +1,79 @@
+# Write a program to ask the user to enter a CPR
+# number and check if the number format is valid or not.
+
+# program that considers the "-" cases
+
+cpr = input("Enter a valid CPR number: ")
+
+if len(cpr) == 10:
+    if cpr.isdigit():
+        print("Valid")
+    else:
+        print("Invalid")
+elif len(cpr) == 11:
+    if cpr[0:6].isdigit() and cpr[6] == "-" and cpr[7:].isdigit():
+        print("Valid")
+    else:
+        print("Invalid")
+else:
+    print("Invalid")
+
+# ask user to enter a number and make a program that define if the number is odd or even 
+
+result = int(input("Enter a number"))
+
+if result%2 == 0: 
+    print("Even")
+    
+else:
+    
+    print("Odd")
+
+# Hamlet case
+
+hamlet = "To be, or not to be, that is the question:\nWhether 'tis nobler in the mind to suffer\nThe slings and arrows of outrageous fortune,\nOr to take arms against a sea of troubles\nAnd by opposing end them. To die-to sleep,\nNo more; and by a sleep to say we end\nThe heart-ache and the thousand natural shocks\nThat flesh is heir to: 'tis a consummation\nDevoutly to be wish'd. To die, to sleep;\nTo sleep, perchance to dream-ay, there's the rub:\nFor in that sleep of death what dreams may come,\nWhen we have shuffled off this mortal coil,\nMust give us pause-there's the respect\nThat makes calamity of so long life..."
+print(hamlet)
+
+
+#a: first occurrence of ”sleep”
+hamlet.find("sleep")
+
+#b: last occurrence of ”sleep”
+hamlet.rfind("sleep")
+
+#c: number of ”the” in any possible writing
+
+hamlet.count("the")
+
+#d: number of line breaks
+hamlet.count("-")
+
+#e: number of the special characters ,’;:.
+hamlet.count(",’;:.")
+
+#f: first occurrence of ”that” in any possible writing
+hamlet.find("that")
+
+#g: last occurrence of ”that” in any possible writing
+hamlet.rfind("that")
+
+#h: the length of hamlet
+len("hamlet")
+
+#i: the length of hamlet until the first occurrence of ”sleep”
+
+# Convert ms to KM/h
+
+ms = float(input("Enter m/s"))
+kmh = ms * 3.6
+mph = ms * 2.2369
+
+print(f"{ms} ms") 
+print(f"{kmh} kmh") , print(f"{mph} mph")
+10.5
+
+
+
+
+
+    
