@@ -1,8 +1,6 @@
 # Write a program to ask the user to enter a CPR
 # number and check if the number format is valid or not.
 
-# program that considers the "-" cases
-
 cpr = input("Enter a valid CPR number: ")
 
 if len(cpr) == 10:
